@@ -1,0 +1,16 @@
+<img src="https://source.unsplash.com/3A5UOMlisTI/300x200" 
+    [ngStyle]="{'width': (percent / 100) * 300 + 'px', 
+                'height': (percent / 100) * 200 + 'px'}">
+<div class="container" >
+
+<div class="slider" (click)="handleClick($event)">
+    <div class="left"></div>
+    <div class="knob" id="knob" ></div>
+    <div class="right"></div>
+</div>
+
+<input type="number" (change)="handleInputChange($event)" [value]="percent" max="200" min="0">
+<span>%</span>
+
+</div>
+
